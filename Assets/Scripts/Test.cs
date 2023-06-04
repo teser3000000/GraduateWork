@@ -20,10 +20,10 @@ public class Test : MonoBehaviour
         
     void FixedUpdate()
     {
-        tree = -0.2f;
+        tree = -0.07f;
         one = rul.transform.rotation.z;
 
-        cube.transform.Rotate(one * 3, 0, 0);
+        cube.transform.Rotate(one * 2, 0, 0);
         four = cube.transform.position.y;
         two = cube.transform.position.x;
         five = cube.transform.position.z;
@@ -32,7 +32,7 @@ public class Test : MonoBehaviour
         {
             flight = !flight;
             cube.transform.Rotate(0, 0, tree + tree);
-            cube.transform.position = new Vector3(two, four + 0.3f, five);
+            cube.transform.position = new Vector3(two, four + 0.07f, five);
         }
     }
 }
