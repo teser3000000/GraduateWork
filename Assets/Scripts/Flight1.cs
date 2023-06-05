@@ -18,6 +18,5 @@ public class Flight1 : MonoBehaviour
     {
         rb.AddForce(direction.normalized * acceleration);
         rb.drag = 20;
-
     }
 }

@@ -1,8 +1,7 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Test : MonoBehaviour
 {
-   
     [SerializeField] GameObject rul;
     [SerializeField] GameObject cube;
    
@@ -33,6 +32,14 @@ public class Test : MonoBehaviour
             flight = !flight;
             cube.transform.Rotate(0, 0, tree + tree);
             cube.transform.position = new Vector3(two, four + 0.07f, five);
+        }
+        Victory();
+    }
+    public void Victory()
+    {
+        if (four > 267.0356f)
+        {
+            SceneManager.LoadScene("Complited 1");
         }
     }
 }
